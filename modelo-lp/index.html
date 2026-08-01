@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="theme-color" content="#08111f">
+  <meta name="theme-color" content="#f7faff">
   <meta property="og:title" content="">
   <meta property="og:description" content="">
   <meta property="og:type" content="website">
@@ -27,48 +27,22 @@
       <h1 class="lp-title" data-bind="title"></h1>
       <p class="lp-lead" data-bind="lead"></p>
       <div class="lp-actions">
-        <a class="lp-btn lp-primary" data-bind="primary-cta" data-preserve-query></a>
-        <a class="lp-btn lp-secondary" data-bind="secondary-cta" data-preserve-query></a>
+        <a class="lp-btn lp-primary" data-bind="primary-cta"></a>
+        <a class="lp-btn lp-secondary" data-bind="secondary-cta"></a>
       </div>
       <div class="lp-chips" data-list="chips"></div>
     </div>
-    <aside class="lp-panel">
-      <h2 data-bind="panel-title"></h2>
-      <p data-bind="panel-text"></p>
-    </aside>
+    <figure class="lp-visual">
+      <img data-bind="hero-image" width="720" height="520" loading="eager">
+      <figcaption data-bind="hero-caption"></figcaption>
+    </figure>
   </div>
 </section>
-
-<section class="lp-section">
-  <div class="lp-wrap">
-    <div class="lp-heading"><div class="lp-eyebrow" data-bind="audience-eyebrow"></div><h2 data-bind="audience-title"></h2><p data-bind="audience-lead"></p></div>
-    <div class="lp-grid" data-list="audience"></div>
-  </div>
-</section>
-
-<section class="lp-section alt">
-  <div class="lp-wrap">
-    <div class="lp-heading"><div class="lp-eyebrow" data-bind="benefits-eyebrow"></div><h2 data-bind="benefits-title"></h2><p data-bind="benefits-lead"></p></div>
-    <div class="lp-grid" data-list="benefits"></div>
-  </div>
-</section>
-
-<section class="lp-section">
-  <div class="lp-wrap">
-    <div class="lp-heading"><div class="lp-eyebrow" data-bind="steps-eyebrow"></div><h2 data-bind="steps-title"></h2><p data-bind="steps-lead"></p></div>
-    <div class="lp-grid lp-steps" data-list="steps"></div>
-  </div>
-</section>
-
-<section class="lp-section">
-  <div class="lp-wrap lp-cta">
-    <h2 data-bind="final-title"></h2>
-    <p data-bind="final-text"></p>
-    <div class="lp-actions" style="justify-content:center">
-      <a class="lp-btn lp-primary" data-bind="final-link" data-preserve-query></a>
-    </div>
-  </div>
-</section>
+<section class="lp-section"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="audience-eyebrow"></div><h2 data-bind="audience-title"></h2><p data-bind="audience-lead"></p></div><div class="lp-grid" data-list="audience"></div></div></section>
+<section class="lp-section alt"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="benefits-eyebrow"></div><h2 data-bind="benefits-title"></h2><p data-bind="benefits-lead"></p></div><div class="lp-grid" data-list="benefits"></div></div></section>
+<section class="lp-section"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="steps-eyebrow"></div><h2 data-bind="steps-title"></h2><p data-bind="steps-lead"></p></div><div class="lp-grid lp-steps" data-list="steps"></div></div></section>
+<section class="lp-section alt"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="faq-eyebrow"></div><h2 data-bind="faq-title"></h2><p data-bind="faq-lead"></p></div><div class="lp-faq" data-list="faq"></div></div></section>
+<section class="lp-section"><div class="lp-wrap lp-cta"><h2 data-bind="final-title"></h2><p data-bind="final-text"></p><div class="lp-actions" style="justify-content:center"><a class="lp-btn lp-primary" data-bind="final-link"></a></div></div></section>
 </main>
 <footer class="lp-footer"><div class="lp-wrap lp-footer-row"><span data-bind="footer"></span><a href="/privacidade/">Privacidade</a></div></footer>
 <script src="config.js"></script>
