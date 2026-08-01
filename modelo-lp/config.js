@@ -1,12 +1,16 @@
 window.LP_CONFIG = {
+  ...window.LP_COMMON,
   slug: 'nova-lp',
+  service: 'nova-oferta',
+  style: 'default',
   meta: {
     title: 'Título da landing page — Dados Aplicados',
     description: 'Descrição curta para mecanismos de busca e compartilhamento.'
   },
-  brand: {
-    name: 'Dados Aplicados',
-    subtitle: 'Rodrigo Sucupira'
+  visual: {
+    src: './hero.svg',
+    alt: 'Descrição objetiva da ilustração da página',
+    caption: 'Explique o que a imagem representa.'
   },
   eyebrow: 'Categoria da oferta',
   headlineBefore: 'Resolva ',
@@ -14,17 +18,15 @@ window.LP_CONFIG = {
   headlineAfter: ' com um caminho claro.',
   lead: 'Explique em uma ou duas frases o problema, o público e o resultado que a página promete.',
   chips: ['Benefício imediato', 'Baixa fricção', 'Próximo passo claro'],
-  panel: {
-    title: 'O que a pessoa recebe',
-    text: 'Resuma a entrega, o formato e o que não será solicitado nesta etapa.'
-  },
   primaryCta: {
+    type: 'tally',
     label: 'Quero avançar',
-    url: '/diagnostico/?origem=nova-lp'
+    origin: 'nova-lp-hero'
   },
   secondaryCta: {
-    label: 'Conhecer os serviços',
-    url: '/#servicos'
+    type: 'link',
+    label: 'Fazer mapa gratuito',
+    url: '/diagnostico/?origem=nova-lp-mapa'
   },
   audience: {
     eyebrow: 'Para quem é',
@@ -56,11 +58,20 @@ window.LP_CONFIG = {
       {title: 'Execução', text: 'A solução adequada é definida.'}
     ]
   },
+  faq: {
+    title: 'Dúvidas antes de começar',
+    items: [
+      {question: 'Para quem é este serviço?', answer: 'Responda de forma específica.'},
+      {question: 'O que acontece depois do formulário?', answer: 'Explique o processo sem promessas excessivas.'},
+      {question: 'Quais são os limites do atendimento?', answer: 'Informe escopo e responsabilidades.'}
+    ]
+  },
   finalCta: {
+    type: 'tally',
     title: 'Feche com uma única ação.',
     text: 'Repita a promessa e reduza a dúvida sobre o que acontece depois.',
     label: 'Começar agora',
-    url: '/diagnostico/?origem=nova-lp-final'
+    origin: 'nova-lp-final'
   },
   footer: '© 2026 Dados Aplicados — página de campanha.'
 };

@@ -32,10 +32,10 @@ await cp(source, destination, {recursive:true});
 const configPath = resolve(destination, 'config.js');
 let config = await readFile(configPath, 'utf8');
 config = config
-  .replace("slug: 'nova-lp'", `slug: '${slug}'`)
   .replace('Título da landing page — Dados Aplicados', `${titleArg || slug} — Dados Aplicados`)
-  .replaceAll('/diagnostico/?origem=nova-lp-final', `/diagnostico/?origem=${slug}-final`)
-  .replaceAll('/diagnostico/?origem=nova-lp', `/diagnostico/?origem=${slug}`);
+  .replace("service: 'nova-oferta'", `service: '${slug}'`)
+  .replaceAll('nova-lp', slug);
 await writeFile(configPath, config);
 
-console.log(`LP criada em /${slug}/. Edite ${slug}/config.js e revise todos os textos antes de publicar.`);
+console.log(`LP criada em /${slug}/.`);
+console.log(`Edite ${slug}/config.js, substitua ${slug}/hero.svg e revise textos, Tally e responsividade antes de publicar.`);
