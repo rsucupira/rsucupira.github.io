@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Cadastro recebido pela Dados Aplicados.">
+  <meta name="theme-color" content="#08111f">
+  <title>Cadastro recebido — Dados Aplicados</title>
+  <link rel="stylesheet" href="/assets/lp.css">
+</head>
+<body>
+<header class="lp-header"><div class="lp-wrap lp-nav"><a class="lp-brand" href="/">Dados Aplicados<small>Rodrigo Sucupira</small></a><a class="lp-link" href="/">Página principal</a></div></header>
+<main>
+<section class="lp-hero">
+  <div class="lp-wrap">
+    <div class="lp-eyebrow">Cadastro recebido</div>
+    <h1 class="lp-title">Seu contexto foi <em>registrado.</em></h1>
+    <p class="lp-lead">O próximo passo é verificar se o projeto está dentro do escopo e qual formato de atendimento faz sentido. Esta confirmação não representa contratação nem promessa de disponibilidade imediata.</p>
+    <div class="lp-actions">
+      <a class="lp-btn lp-primary" href="/#servicos" data-preserve-query>Conhecer os formatos</a>
+      <a class="lp-btn lp-secondary" href="/">Voltar à página principal</a>
+    </div>
+  </div>
+</section>
+<section class="lp-section alt"><div class="lp-wrap"><div class="lp-grid">
+  <article class="lp-card"><h3>Não envie a base agora</h3><p>Aguarde a definição de escopo antes de compartilhar arquivos ou documentos.</p></article>
+  <article class="lp-card"><h3>Proteja informações</h3><p>Dados pessoais, médicos, empresariais ou confidenciais devem ser anonimizados quando aplicável.</p></article>
+  <article class="lp-card"><h3>Guarde seu resultado</h3><p>O resumo do mapa ajuda a retomar a conversa sem repetir todas as informações.</p></article>
+</div></div></section>
+</main>
+<footer class="lp-footer"><div class="lp-wrap lp-footer-row"><span>© 2026 Dados Aplicados</span><a href="/privacidade/">Privacidade</a></div></footer>
+<script>
+(() => {
+  const params = Object.fromEntries(new URLSearchParams(location.search));
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({event:'lead_enviado', ...params});
+  const preserve = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','origem','resultado','resultado_secundario'];
+  document.querySelectorAll('[data-preserve-query]').forEach(link => {
+    const url = new URL(link.href, location.origin);
+    preserve.forEach(key => { if (params[key]) url.searchParams.set(key, params[key]); });
+    link.href = url.toString();
+  });
+})();
+</script>
+</body>
+</html>
