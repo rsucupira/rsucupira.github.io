@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import {cp, mkdir, readFile, writeFile, access} from 'node:fs/promises';
-import {resolve, basename} from 'node:path';
+import {resolve, basename, dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
 
 const [, , slugArg, titleArg] = process.argv;
 if (!slugArg) {
@@ -14,7 +15,8 @@ if (!slug) {
   process.exit(1);
 }
 
-const root = resolve(import.meta.dirname, '..');
+const scriptDir = dirname(fileURLToPath(import.meta.url));
+const root = resolve(scriptDir, '..');
 const source = resolve(root, 'modelo-lp');
 const destination = resolve(root, slug);
 
@@ -32,8 +34,8 @@ let config = await readFile(configPath, 'utf8');
 config = config
   .replace("slug: 'nova-lp'", `slug: '${slug}'`)
   .replace('Título da landing page — Dados Aplicados', `${titleArg || slug} — Dados Aplicados`)
-  .replaceAll('/diagnostico/?origem=nova-lp', `/diagnostico/?origem=${slug}`)
-  .replaceAll('/diagnostico/?origem=nova-lp-final', `/diagnostico/?origem=${slug}-final`);
+  .replaceAll('/diagnostico/?origem=nova-lp-final', `/diagnostico/?origem=${slug}-final`)
+  .replaceAll('/diagnostico/?origem=nova-lp', `/diagnostico/?origem=${slug}`);
 await writeFile(configPath, config);
 
 console.log(`LP criada em /${slug}/. Edite ${slug}/config.js e revise todos os textos antes de publicar.`);
