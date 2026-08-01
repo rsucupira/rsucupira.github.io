@@ -22,6 +22,7 @@ button{font:inherit}
 .lp-title{font-size:clamp(2.75rem,5.8vw,5rem);line-height:.99;letter-spacing:-.06em;margin:18px 0 24px;color:var(--lp-navy)}
 .lp-title em{font-style:normal;color:var(--lp-accent);position:relative}.lp-title em:after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:4px;border-radius:4px;background:var(--lp-gold);opacity:.72}
 .lp-lead{color:var(--lp-muted);font-size:1.14rem;max-width:720px}
+.lp-lead:after{content:"AO VIVO · ONLINE · INTERATIVO — aula, consultoria ou orientação em tempo real. Não é conteúdo gravado.";display:block;margin-top:19px;padding:12px 15px;border:1px solid rgba(196,154,58,.5);border-left:5px solid var(--lp-gold);border-radius:12px;background:linear-gradient(90deg,var(--lp-gold-soft),rgba(255,255,255,.92));color:var(--lp-navy);font-size:.85rem;font-weight:950;letter-spacing:.025em;text-transform:uppercase;box-shadow:0 10px 25px rgba(92,69,20,.09)}
 .lp-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}
 .lp-btn{display:inline-flex;align-items:center;justify-content:center;min-height:51px;padding:0 22px;border-radius:13px;border:1px solid transparent;font-weight:900;cursor:pointer;transition:transform .18s,box-shadow .18s}
 .lp-btn:hover{transform:translateY(-2px)}
@@ -49,8 +50,11 @@ body[data-style="matematica-vestibular"] .lp-hero:before{background:repeating-li
 body[data-style="fisica-vestibular"] .lp-hero:before{background:radial-gradient(circle at 22% 35%,rgba(30,95,175,.14) 0 2px,transparent 3px);background-size:34px 34px}
 body[data-style="bioestatistica"] .lp-hero:before{background-image:radial-gradient(rgba(30,95,175,.13) 1.5px,transparent 1.5px);background-size:28px 28px}
 body[data-style="python"] .lp-visual{transform:rotate(1deg)}
+body[data-style="python-financas"] .lp-hero:before{background-image:linear-gradient(rgba(30,95,175,.075) 1px,transparent 1px),linear-gradient(90deg,rgba(30,95,175,.075) 1px,transparent 1px);background-size:46px 46px}
 body[data-style="excel"] .lp-hero:before{background-image:linear-gradient(rgba(30,95,175,.075) 1px,transparent 1px),linear-gradient(90deg,rgba(30,95,175,.075) 1px,transparent 1px);background-size:58px 31px}
 body[data-style="dashboards"] .lp-card{border-radius:13px}
 body[data-style="inteligencia-artificial"] .lp-hero:before{background:radial-gradient(circle at 30% 40%,rgba(30,95,175,.16),transparent 38%),radial-gradient(circle at 78% 22%,rgba(196,154,58,.12),transparent 28%)}
+body[data-style="systematic-investments"] .lp-hero:before{background-image:linear-gradient(rgba(21,67,114,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(21,67,114,.08) 1px,transparent 1px);background-size:38px 38px}
+body[data-style="systematic-investments"] .lp-lead:after{content:"LIVE · ONLINE · INTERACTIVE — real-time consulting, training or project discussion. This is not recorded content."}
 @media(max-width:840px){.lp-hero-grid{grid-template-columns:1fr}.lp-visual{max-width:680px}.lp-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.lp-hero{padding-top:58px}.lp-grid{grid-template-columns:1fr}.lp-actions .lp-btn{width:100%}.lp-footer-row{display:block}.lp-title{font-size:3rem}.lp-section{padding:70px 0}.lp-cta{padding:30px 20px}}
+@media(max-width:600px){.lp-hero{padding-top:58px}.lp-grid{grid-template-columns:1fr}.lp-actions .lp-btn{width:100%}.lp-footer-row{display:block}.lp-title{font-size:3rem}.lp-section{padding:70px 0}.lp-cta{padding:30px 20px}.lp-lead:after{font-size:.76rem}}

@@ -10,9 +10,11 @@ const pages = [
   'fisica-vestibular',
   'bioestatistica',
   'python',
+  'python-financas',
   'excel',
   'dashboards',
-  'inteligencia-artificial'
+  'inteligencia-artificial',
+  'systematic-investments'
 ];
 
 const errors = [];
@@ -61,10 +63,20 @@ for (const slug of pages) {
   }
 }
 
-const runtime = await readFile(resolve(root, 'assets/lp-runtime.js'), 'utf8');
+const [runtime, styles, site] = await Promise.all([
+  readFile(resolve(root, 'assets/lp-runtime.js'), 'utf8'),
+  readFile(resolve(root, 'assets/lp.css'), 'utf8'),
+  readFile(resolve(root, 'assets/site.js'), 'utf8')
+]);
+
 ['lp', 'servico', 'origem'].forEach(field => {
   if (!runtime.includes(`searchParams.set('${field}'`)) errors.push(`runtime: campo hidden ${field} ausente`);
 });
+
+if (!styles.includes('AO VIVO · ONLINE · INTERATIVO')) errors.push('styles: destaque de atendimento ao vivo ausente');
+if (!styles.includes('LIVE · ONLINE · INTERACTIVE')) errors.push('styles: destaque em inglês ausente');
+if (!site.includes("slug:'python-financas'")) errors.push('site: Python para Finanças não aparece no hub principal');
+if (site.includes("slug:'systematic-investments'")) errors.push('site: LP em inglês não deve aparecer no hub principal');
 
 if (errors.length) {
   console.error('Falhas encontradas:');
@@ -72,4 +84,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Validação concluída: ${pages.length} landing pages e integração Tally verificadas.`);
+console.log(`Validação concluída: ${pages.length} landing pages, atendimento ao vivo, hub e integração Tally verificados.`);
