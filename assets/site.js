@@ -27,9 +27,10 @@
     {slug:'fisica-vestibular', icon:'→', title:'Física para vestibular', text:'Conceito, diagramas e resolução de questões.'},
     {slug:'bioestatistica', icon:'◉', title:'Bioestatística', text:'Pergunta, base, análise e interpretação científica.'},
     {slug:'python', icon:'</>', title:'Programação em Python', text:'Fundamentos, dados, automação e projetos.'},
+    {slug:'python-financas', icon:'Py$', title:'Python para Finanças', text:'Dados financeiros, risco, portfólios e automação.'},
     {slug:'excel', icon:'▦', title:'Excel', text:'Planilhas, fórmulas, tabelas e análises.'},
     {slug:'dashboards', icon:'▥', title:'Dashboards', text:'KPIs, visualizações e painéis para decisão.'},
-    {slug:'inteligencia-artificial', icon:'✦', title:'Inteligência Artificial', text:'Uso prático, crítico e responsável de IA.'}
+    {slug:'inteligencia-artificial', icon:'✦', title:'Inteligência Artificial', text:'Stack, integrações, automações e uso responsável de IA.'}
   ];
 
   const servicesSection = document.getElementById('servicos');
