@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+import {cp, mkdir, readFile, writeFile, access} from 'node:fs/promises';
+import {resolve, basename} from 'node:path';
+
+const [, , slugArg, titleArg] = process.argv;
+if (!slugArg) {
+  console.error('Uso: node scripts/create-lp.mjs <slug> "Título da LP"');
+  process.exit(1);
+}
+
+const slug = slugArg.toLowerCase().trim().replace(/[^a-z0-9-]+/g, '-').replace(/^-|-$/g, '');
+if (!slug) {
+  console.error('O slug informado é inválido.');
+  process.exit(1);
+}
+
+const root = resolve(import.meta.dirname, '..');
+const source = resolve(root, 'modelo-lp');
+const destination = resolve(root, slug);
+
+try {
+  await access(destination);
+  console.error(`A pasta ${basename(destination)} já existe.`);
+  process.exit(1);
+} catch {}
+
+await mkdir(destination, {recursive:true});
+await cp(source, destination, {recursive:true});
+
+const configPath = resolve(destination, 'config.js');
+let config = await readFile(configPath, 'utf8');
+config = config
+  .replace("slug: 'nova-lp'", `slug: '${slug}'`)
+  .replace('Título da landing page — Dados Aplicados', `${titleArg || slug} — Dados Aplicados`)
+  .replaceAll('/diagnostico/?origem=nova-lp', `/diagnostico/?origem=${slug}`)
+  .replaceAll('/diagnostico/?origem=nova-lp-final', `/diagnostico/?origem=${slug}-final`);
+await writeFile(configPath, config);
+
+console.log(`LP criada em /${slug}/. Edite ${slug}/config.js e revise todos os textos antes de publicar.`);
