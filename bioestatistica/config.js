@@ -1,66 +1,35 @@
 window.LP_CONFIG = {
-  slug: 'bioestatistica',
-  meta: {
-    title: 'Bioestatística para projetos acadêmicos — Dados Aplicados',
-    description: 'Apoio em bioestatística para TCC, iniciação científica, artigos e projetos acadêmicos.'
-  },
-  brand: {
-    name: 'Dados Aplicados',
-    subtitle: 'Rodrigo Sucupira'
-  },
-  eyebrow: 'Bioestatística aplicada',
-  headlineBefore: 'Organize sua análise antes de ',
-  highlight: 'escolher testes',
-  headlineAfter: ' ou interpretar resultados.',
-  lead: 'Orientação individual para estudantes e pesquisadores das áreas biológicas e da saúde que precisam transformar uma pergunta de pesquisa em uma análise clara, coerente e explicável.',
-  chips: ['TCC e iniciação científica', 'Excel, Python ou ferramenta adequada', 'Atendimento online'],
-  panel: {
-    title: 'O primeiro objetivo não é escolher um teste',
-    text: 'Antes, é preciso verificar pergunta, desenho, variáveis, qualidade da base e o tipo de conclusão que os dados permitem sustentar.'
-  },
-  primaryCta: {
-    label: 'Mapear meu gargalo',
-    url: '/diagnostico/?origem=bioestatistica-hero'
-  },
-  secondaryCta: {
-    label: 'Conhecer os formatos',
-    url: '/#servicos'
-  },
-  audience: {
-    eyebrow: 'Para quem é',
-    title: 'Para projetos que já têm uma pergunta real.',
-    lead: 'O acompanhamento parte do estágio atual do seu trabalho, e não de uma lista genérica de fórmulas.',
-    items: [
-      {title: 'Estudantes de graduação', text: 'TCCs, disciplinas de bioestatística e iniciação científica com dados para organizar ou analisar.'},
-      {title: 'Pós-graduandos', text: 'Dissertações, artigos e projetos que exigem maior clareza entre objetivo, método e interpretação.'},
-      {title: 'Pesquisadores iniciantes', text: 'Para estruturar bases, análises descritivas e decisões metodológicas compatíveis com o desenho do estudo.'}
-    ]
-  },
-  benefits: {
-    eyebrow: 'O que podemos trabalhar',
-    title: 'Da pergunta à apresentação dos resultados.',
-    lead: 'O escopo é definido depois da avaliação de aderência.',
-    items: [
-      {title: 'Pergunta e variáveis', text: 'Clarificar objetivo, desfecho, grupos, fatores e o que cada variável representa.'},
-      {title: 'Base e análise', text: 'Revisar estrutura, ausências, categorias, resumos, gráficos e abordagem compatível.'},
-      {title: 'Interpretação', text: 'Separar resultado numérico, relevância, incerteza, limitações e conclusão responsável.'}
-    ]
-  },
-  steps: {
-    eyebrow: 'Como funciona',
-    title: 'Comece com uma triagem curta.',
-    lead: 'Você não precisa enviar a base no primeiro contato.',
-    items: [
-      {title: 'Faça o mapa', text: 'Responda seis perguntas sobre etapa, bloqueio, base, ferramenta e prazo.'},
-      {title: 'Avaliação de aderência', text: 'Verifico se o projeto está dentro do escopo e qual formato de apoio faz sentido.'},
-      {title: 'Plano de trabalho', text: 'Definimos uma sessão pontual ou acompanhamento, com limites e entregas claros.'}
-    ]
-  },
-  finalCta: {
-    title: 'Descubra qual parte do projeto precisa ser resolvida primeiro.',
-    text: 'O mapa é gratuito, entrega um resultado imediato e leva suas respostas para um cadastro curto.',
-    label: 'Fazer mapa gratuito',
-    url: '/diagnostico/?origem=bioestatistica-final'
-  },
-  footer: '© 2026 Dados Aplicados — bioestatística com finalidade educacional e metodológica.'
+      ...window.LP_COMMON,
+      slug: 'bioestatistica', service: 'bioestatistica', style: 'bioestatistica',
+      theme: {...window.LP_COMMON.theme, background: '#f8fbff', surfaceAlt: '#edf6fb', blue: '#246aa0', blueLight: '#9acbdc', gold: '#b9984d'},
+      meta: {title: 'Bioestatística para TCC e Pesquisa — Dados Aplicados', description: 'Orientação em bioestatística para estudantes e pesquisadores das áreas biológicas, saúde e agrárias.'},
+      visual: {src: './hero.svg', alt: 'Ilustração científica com gráfico, amostras e planilha de dados', caption: 'Pergunta, base, análise e interpretação em um mesmo fluxo.'},
+      eyebrow: 'Bioestatística aplicada',
+      headlineBefore: 'Do dado à ', highlight: 'interpretação', headlineAfter: ' em TCC, artigo e pesquisa.',
+      lead: 'Orientação para estudantes e pesquisadores das áreas biológicas, saúde e agrárias que precisam organizar dados e tomar decisões metodológicas responsáveis.',
+      chips: ['TCC e artigos', 'Biológicas e saúde', 'Excel, Python ou R'],
+      primaryCta: {type: 'tally', label: 'Quero avaliar meu projeto', origin: 'bioestatistica-hero'},
+      secondaryCta: {type: 'link', label: 'Fazer mapa gratuito', url: '/diagnostico/?origem=bioestatistica-mapa'},
+      audience: {eyebrow: 'Para quem é', title: 'Para projetos com uma pergunta real e dados para compreender.', items: [
+        {title: 'Graduação', text: 'TCC, iniciação científica e disciplinas de bioestatística.'},
+        {title: 'Pós-graduação', text: 'Dissertações, artigos e projetos com maior exigência metodológica.'},
+        {title: 'Áreas aplicadas', text: 'Biologia, biomedicina, saúde, veterinária e ciências agrárias.'}
+      ]},
+      benefits: {eyebrow: 'O que trabalhamos', title: 'Da pergunta à apresentação dos resultados.', items: [
+        {title: 'Pergunta e variáveis', text: 'Objetivo, desfecho, grupos, fatores e estrutura do estudo.'},
+        {title: 'Base e análise', text: 'Qualidade, ausências, categorias, resumos, gráficos e métodos compatíveis.'},
+        {title: 'Interpretação', text: 'Incerteza, relevância, limitações e conclusão responsável.'}
+      ]},
+      steps: {eyebrow: 'Como funciona', title: 'Comece sem enviar a base.', items: [
+        {title: 'Contexto', text: 'Você informa projeto, etapa, ferramenta e prazo.'},
+        {title: 'Aderência', text: 'Verifico escopo, riscos e formato adequado.'},
+        {title: 'Plano', text: 'Definimos sessão pontual ou acompanhamento.'}
+      ]},
+      faq: {title: 'Dúvidas sobre bioestatística', items: [
+        {question: 'Preciso enviar a base no primeiro contato?', answer: 'Não. Primeiro avaliamos objetivo, desenho, etapa e dificuldade, sem documentos confidenciais.'},
+        {question: 'Você escolhe o teste e faz o trabalho?', answer: 'O serviço é de orientação e apoio técnico. Não substitui o autor nem realiza avaliações acadêmicas em seu nome.'},
+        {question: 'Atende projetos de saúde?', answer: 'Sim, quando o escopo metodológico estiver dentro da experiência disponível e os dados forem tratados de forma adequada.'}
+      ]},
+      finalCta: {type: 'tally', title: 'Nem todo problema de bioestatística começa no teste.', text: 'Descreva o projeto e o prazo. O Tally receberá automaticamente a identificação desta LP.', label: 'Solicitar avaliação de aderência', origin: 'bioestatistica-final'},
+      footer: '© 2026 Dados Aplicados — bioestatística com finalidade educacional e metodológica.'
 };
