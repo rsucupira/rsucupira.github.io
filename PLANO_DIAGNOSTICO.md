@@ -36,9 +36,9 @@ Transformar o diagnóstico atual em um funil confiável que:
 ### Matriz mínima de testes
 
 1. Planejamento + planejamento + sem dados → Planejamento, sem secundário relevante.
-2. Planejamento + interpretação + sem dados → Planejamento ou empate resolvido com indicação secundária.
-3. Método + método + base organizada → Método.
-4. Resultados prontos + interpretação + base organizada → Interpretação, método secundário.
+2. Planejamento + interpretação + sem dados → Planejamento com Interpretação como ponto secundário.
+3. Método + método + base organizada → Método, sem secundário relevante.
+4. Resultados prontos + interpretação + base organizada → Interpretação, sem secundário relevante.
 5. Qualquer combinação com prazo menor que sete dias → CTA urgente.
 6. Recomeçar o diagnóstico → limpar respostas, resultados e estado interno.
 7. Copiar resultado → incluir gargalo principal, secundário e respostas.
