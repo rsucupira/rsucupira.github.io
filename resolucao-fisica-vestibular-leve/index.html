@@ -1,1 +1,210 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Resolução orientada de questões para vestibulares e ENEM."><meta property="og:type" content="website"><meta property="og:title" content="Resolução de questões para vestibular"><meta property="og:description" content="Preparação individual com foco em questões."><title>Resolução de questões para vestibular</title><link rel="stylesheet" href="/assets/lp.css"></head><body><header class="lp-header"><div class="lp-wrap lp-nav"><a class="lp-brand" href="/"><span data-bind="brand"></span><small data-bind="brand-subtitle"></small></a><a class="lp-link" href="/">Página principal</a></div></header><main><section class="lp-hero"><div class="lp-wrap lp-hero-grid"><div><div class="lp-eyebrow" data-bind="eyebrow"></div><h1 class="lp-title" data-bind="title"></h1><p class="lp-lead" data-bind="lead"></p><div class="lp-actions"><a class="lp-btn lp-primary" data-bind="primary-cta"></a><a class="lp-btn lp-secondary" data-bind="secondary-cta"></a></div><div class="lp-chips" data-list="chips"></div></div><figure class="lp-visual"><img data-bind="hero-image" width="720" height="520"><figcaption data-bind="hero-caption"></figcaption></figure></div></section><section class="lp-section"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="audience-eyebrow"></div><h2 data-bind="audience-title"></h2><p data-bind="audience-lead"></p></div><div class="lp-grid" data-list="audience"></div></div></section><section class="lp-section alt"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="benefits-eyebrow"></div><h2 data-bind="benefits-title"></h2><p data-bind="benefits-lead"></p></div><div class="lp-grid" data-list="benefits"></div></div></section><section class="lp-section"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="steps-eyebrow"></div><h2 data-bind="steps-title"></h2><p data-bind="steps-lead"></p></div><div class="lp-grid lp-steps" data-list="steps"></div></div></section><section class="lp-section alt"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="faq-eyebrow"></div><h2 data-bind="faq-title"></h2><p data-bind="faq-lead"></p></div><div class="lp-faq" data-list="faq"></div></div></section><section class="lp-section"><div class="lp-wrap lp-cta"><h2 data-bind="final-title"></h2><p data-bind="final-text"></p><div class="lp-actions" style="justify-content:center"><a class="lp-btn lp-primary" data-bind="final-link"></a></div></div></section></main><footer class="lp-footer"><div class="lp-wrap lp-footer-row"><span data-bind="footer"></span><a href="/privacidade/">Privacidade</a></div></footer><script src="/assets/lp-common.js"></script><script src="config.js"></script><script src="/assets/lp-runtime.js" defer></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Resolução orientada de questões de Física para vestibulares e ENEM.">
+  <meta name="theme-color" content="#062b49">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Física para Vestibular e ENEM — Rodrigo de Carvalho">
+  <meta property="og:description" content="Descubra onde a questão trava e transforme erros em estratégia de prova.">
+  <title>Física para Vestibular e ENEM — Rodrigo de Carvalho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="lp-header">
+    <div class="lp-wrap lp-nav">
+      <a class="lp-brand" href="/" aria-label="Voltar para a página principal">
+        <span class="brand-orbit" aria-hidden="true"><i></i></span>
+        <span><strong data-bind="brand"></strong><small data-bind="brand-subtitle"></small></span>
+      </a>
+      <nav class="top-links" aria-label="Navegação da página">
+        <a href="#onde-trava">Onde trava</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a class="top-contact" href="#contato">Entrar em contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="lp-hero" id="topo">
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="lp-wrap hero-layout">
+        <div class="hero-copy">
+          <div class="lp-eyebrow" data-bind="eyebrow"></div>
+          <h1 class="lp-title" data-bind="title"></h1>
+          <p class="lp-lead" data-bind="lead"></p>
+          <div class="lp-actions">
+            <a class="lp-btn lp-primary" data-bind="primary-cta"></a>
+            <a class="lp-btn lp-secondary" data-bind="secondary-cta"></a>
+          </div>
+          <div class="lp-chips" data-list="chips" aria-label="Pontos trabalhados"></div>
+        </div>
+
+        <div class="physics-scene" aria-label="Ilustração de uma maçã sobre uma questão de física com fórmulas e gráficos">
+          <div class="formula formula-a">F = ma</div>
+          <div class="formula formula-b">v = √2gh</div>
+          <div class="formula formula-c">E<sub>c</sub> = ½mv²</div>
+          <div class="axis-sketch" aria-hidden="true">
+            <span class="axis-y"></span><span class="axis-x"></span><span class="axis-curve"></span>
+            <b>s</b><i>t</i>
+          </div>
+
+          <svg class="apple" viewBox="0 0 280 290" role="img" aria-label="Maçã vermelha caindo">
+            <defs>
+              <radialGradient id="appleRed" cx="35%" cy="28%" r="72%">
+                <stop offset="0" stop-color="#ff8a55"/>
+                <stop offset=".52" stop-color="#cf421e"/>
+                <stop offset="1" stop-color="#7d1e12"/>
+              </radialGradient>
+              <linearGradient id="leafGreen" x1="0" x2="1">
+                <stop offset="0" stop-color="#9fc75e"/>
+                <stop offset="1" stop-color="#3f6f2b"/>
+              </linearGradient>
+              <filter id="appleShadow" x="-30%" y="-30%" width="160%" height="180%">
+                <feDropShadow dx="0" dy="15" stdDeviation="10" flood-color="#031c30" flood-opacity=".28"/>
+              </filter>
+            </defs>
+            <g filter="url(#appleShadow)">
+              <path d="M137 71c-18-16-43-27-67-17-38 15-50 69-38 117 17 68 55 105 91 98 10-2 19-8 27-8 10 0 18 7 30 8 36 4 72-39 83-107 8-50-8-95-47-108-27-9-50 1-67 17-4 4-8 4-12 0z" fill="url(#appleRed)" stroke="#532015" stroke-width="6"/>
+              <path d="M145 69c1-29 8-45 22-59" fill="none" stroke="#6f3d19" stroke-width="13" stroke-linecap="round"/>
+              <path d="M162 35c35-29 70-26 91-14-22 31-56 42-91 14z" fill="url(#leafGreen)" stroke="#315322" stroke-width="5"/>
+              <path d="M67 98c18-23 43-31 64-25" fill="none" stroke="#ffb28c" stroke-width="12" stroke-linecap="round" opacity=".55"/>
+            </g>
+          </svg>
+
+          <div class="fall-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+          <article class="exam-sheet">
+            <div class="paper-top"><span class="wrong-mark">×</span><strong>Questão 23</strong></div>
+            <p>Um corpo é solto do repouso de uma altura <em>h</em>. Desprezando o ar, determine a velocidade ao atingir o solo.</p>
+            <div class="mini-problem" aria-hidden="true">
+              <span class="height">h</span><span class="ball"></span><span class="path"></span><span class="ground"></span>
+            </div>
+            <div class="answer">v = √2gh</div>
+          </article>
+          <div class="pencil-note">primeiro entenda a situação,<br>depois escolha a relação.</div>
+        </div>
+      </div>
+
+      <div class="lp-wrap poster-band-wrap">
+        <div class="poster-band">
+          <div class="band-atom" aria-hidden="true"><i></i><b></b></div>
+          <div>
+            <span>Resolução de questões de</span>
+            <strong>Física</strong>
+          </div>
+          <p>para <b>Vestibular</b><br>e <em>ENEM</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section diagnosis" id="onde-trava">
+      <div class="lp-wrap section-split">
+        <div class="lp-heading sticky-heading">
+          <div class="lp-eyebrow" data-bind="audience-eyebrow"></div>
+          <h2 data-bind="audience-title"></h2>
+          <p data-bind="audience-lead"></p>
+          <div class="hand-arrow" aria-hidden="true">↘</div>
+        </div>
+        <div class="lp-grid diagnosis-grid" data-list="audience"></div>
+      </div>
+    </section>
+
+    <section class="lp-section method-section">
+      <div class="lp-wrap">
+        <div class="lp-heading centered-heading">
+          <div class="lp-eyebrow" data-bind="benefits-eyebrow"></div>
+          <h2 data-bind="benefits-title"></h2>
+          <p data-bind="benefits-lead"></p>
+        </div>
+        <div class="lp-grid benefits-grid" data-list="benefits"></div>
+        <div class="method-note">
+          <span class="note-pin" aria-hidden="true"></span>
+          <strong>Mais estratégia. Menos chute. Mais você.</strong>
+          <p>O objetivo não é decorar uma coleção de fórmulas, mas aprender a reconhecer o fenômeno, escolher um caminho e conferir se a resposta faz sentido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section process-section" id="como-funciona">
+      <div class="lp-wrap process-layout">
+        <div class="process-board">
+          <span class="chalk-label">Aula ao vivo · online</span>
+          <h2>Da questão assustadora a um raciocínio que você consegue repetir.</h2>
+          <div class="board-equation">enunciado → desenho → relação → conta → revisão</div>
+          <p>Você acompanha cada decisão da resolução, faz perguntas e aprende a identificar o ponto exato em que o raciocínio muda de direção.</p>
+        </div>
+        <div>
+          <div class="lp-heading compact-heading">
+            <div class="lp-eyebrow" data-bind="steps-eyebrow"></div>
+            <h2 data-bind="steps-title"></h2>
+            <p data-bind="steps-lead"></p>
+          </div>
+          <div class="lp-grid lp-steps" data-list="steps"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section bring-section">
+      <div class="lp-wrap bring-card">
+        <div>
+          <div class="lp-eyebrow">O que você pode trazer</div>
+          <h2>Questões que travaram, listas, simulados ou uma prova-alvo.</h2>
+          <p>O atendimento parte de material real. Assim, a teoria aparece no momento em que ela se torna necessária para resolver a questão.</p>
+        </div>
+        <ul class="bring-list">
+          <li><span>01</span>Questões do ENEM e de vestibulares específicos</li>
+          <li><span>02</span>Listas da escola ou do cursinho</li>
+          <li><span>03</span>Erros recorrentes em simulados</li>
+          <li><span>04</span>Dúvidas de matemática que estão atrapalhando a física</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lp-section faq-section">
+      <div class="lp-wrap faq-layout">
+        <div class="lp-heading compact-heading">
+          <div class="lp-eyebrow" data-bind="faq-eyebrow"></div>
+          <h2 data-bind="faq-title"></h2>
+          <p data-bind="faq-lead"></p>
+        </div>
+        <div class="lp-faq" data-list="faq"></div>
+      </div>
+    </section>
+
+    <section class="lp-section contact-section" id="contato">
+      <div class="lp-wrap lp-cta">
+        <div class="cta-orbit" aria-hidden="true"><i></i><b></b></div>
+        <div>
+          <span class="cta-kicker">Próximo passo</span>
+          <h2 data-bind="final-title"></h2>
+          <p data-bind="final-text"></p>
+        </div>
+        <div class="lp-actions">
+          <a class="lp-btn lp-primary" data-bind="final-link"></a>
+        </div>
+        <div class="cta-hand">conte onde a questão te derruba →</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lp-footer">
+    <div class="lp-wrap footer-layout">
+      <div class="footer-signature">
+        <strong>Rodrigo de Carvalho</strong>
+        <span>Física · raciocínio · resultados</span>
+      </div>
+      <p data-bind="footer"></p>
+      <div class="footer-links"><a href="/">Página principal</a><a href="/privacidade/">Privacidade</a></div>
+    </div>
+  </footer>
+
+  <script src="/assets/lp-common.js"></script>
+  <script src="config.js"></script>
+  <script src="/assets/lp-runtime.js" defer></script>
+</body>
+</html>
