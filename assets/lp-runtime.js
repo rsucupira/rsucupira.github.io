@@ -123,7 +123,7 @@
   qs('meta[property="og:description"]')?.setAttribute('content', description);
 
   setText('[data-bind="brand"]', config.brand?.name || 'Dados Aplicados');
-  setText('[data-bind="brand-subtitle"]', config.brand?.subtitle || 'Rodrigo Sucupira');
+  setText('[data-bind="brand-subtitle"]', config.brand?.subtitle || 'Rodrigo de Carvalho');
   setText('[data-bind="eyebrow"]', config.eyebrow);
   setHtml('[data-bind="title"]', `${config.headlineBefore || ''}<em>${config.highlight || ''}</em>${config.headlineAfter || ''}`);
   setText('[data-bind="lead"]', config.lead);
