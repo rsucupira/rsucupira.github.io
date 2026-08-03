@@ -16,7 +16,7 @@ window.LP_CONFIG = {
     gold: '#f3c20d'
   },
   meta: {
-    title: 'Física para Vestibular e ENEM — Rodrigo de Carvalho',
+    title: 'Física para Vestibular e ENEM — Rodrigo Lima',
     description: 'Resolução orientada de questões de Física para vestibulares e ENEM, com foco em enunciado, escolha de relações, unidades, cálculo e revisão de erros.'
   },
   eyebrow: 'Resolução de questões para vestibulares e ENEM',
@@ -88,7 +88,7 @@ window.LP_CONFIG = {
     url: '/resolucao-fisica-vestibular-leve/#formulario-contato',
     origin: 'fisica-leve-final'
   },
-  footer: '© 2026 Rodrigo de Carvalho — atendimento educacional ao vivo e online.'
+  footer: '© 2026 Rodrigo Lima — atendimento educacional ao vivo e online.'
 };
 
 (() => {
