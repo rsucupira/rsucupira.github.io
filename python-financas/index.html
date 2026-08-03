@@ -1,1 +1,302 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Aula e consultoria ao vivo em Python aplicado a dados financeiros, risco, portfólios e automação."><meta name="theme-color" content="#f6f9fd"><meta property="og:title" content="Python para Finanças — Dados Aplicados"><meta property="og:description" content="Código aplicado a dados, risco, retornos e processos financeiros."><meta property="og:type" content="website"><title>Python para Finanças — Dados Aplicados</title><link rel="stylesheet" href="/assets/lp.css"></head><body><header class="lp-header"><div class="lp-wrap lp-nav"><a class="lp-brand" href="/"><span data-bind="brand"></span><small data-bind="brand-subtitle"></small></a><a class="lp-link" href="/">Página principal</a></div></header><main><section class="lp-hero"><div class="lp-wrap lp-hero-grid"><div><div class="lp-eyebrow" data-bind="eyebrow"></div><h1 class="lp-title" data-bind="title"></h1><p class="lp-lead" data-bind="lead"></p><div class="lp-actions"><a class="lp-btn lp-primary" data-bind="primary-cta"></a><a class="lp-btn lp-secondary" data-bind="secondary-cta"></a></div><div class="lp-chips" data-list="chips"></div></div><figure class="lp-visual"><img data-bind="hero-image" width="720" height="520" loading="eager"><figcaption data-bind="hero-caption"></figcaption></figure></div></section><section class="lp-section"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="audience-eyebrow"></div><h2 data-bind="audience-title"></h2><p data-bind="audience-lead"></p></div><div class="lp-grid" data-list="audience"></div></div></section><section class="lp-section alt"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="benefits-eyebrow"></div><h2 data-bind="benefits-title"></h2><p data-bind="benefits-lead"></p></div><div class="lp-grid" data-list="benefits"></div></div></section><section class="lp-section"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="steps-eyebrow"></div><h2 data-bind="steps-title"></h2><p data-bind="steps-lead"></p></div><div class="lp-grid lp-steps" data-list="steps"></div></div></section><section class="lp-section alt"><div class="lp-wrap"><div class="lp-heading"><div class="lp-eyebrow" data-bind="faq-eyebrow"></div><h2 data-bind="faq-title"></h2><p data-bind="faq-lead"></p></div><div class="lp-faq" data-list="faq"></div></div></section><section class="lp-section"><div class="lp-wrap lp-cta"><h2 data-bind="final-title"></h2><p data-bind="final-text"></p><div class="lp-actions" style="justify-content:center"><a class="lp-btn lp-primary" data-bind="final-link"></a></div></div></section></main><footer class="lp-footer"><div class="lp-wrap lp-footer-row"><span data-bind="footer"></span><a href="/privacidade/">Privacidade</a></div></footer><script src="/assets/lp-common.js"></script><script src="config.js"></script><script src="/assets/lp-runtime.js" defer></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Transforme dados financeiros em análises claras, reproduzíveis e automatizadas com Python. Aulas e consultoria online ao vivo.">
+  <meta name="theme-color" content="#0a2945">
+  <meta property="og:title" content="Python para Finanças — Aulas e Consultoria ao Vivo">
+  <meta property="og:description" content="Código aplicado a dados de mercado, risco, portfólios, séries temporais e automação.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <title>Python para Finanças — Aulas e Consultoria ao Vivo</title>
+  <link rel="stylesheet" href="/assets/lp.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="lp-header">
+    <div class="lp-wrap lp-nav">
+      <a class="lp-brand" href="/">
+        <span data-bind="brand"></span>
+        <small data-bind="brand-subtitle"></small>
+      </a>
+
+      <nav class="pf-nav-links" aria-label="Navegação da página">
+        <a href="#formatos">Formatos</a>
+        <a href="#exemplos">Aplicações</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+
+      <a class="pf-nav-cta" href="#contato">Explicar meu projeto</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="lp-hero">
+      <div class="lp-wrap lp-hero-grid">
+        <div>
+          <div class="lp-eyebrow" data-bind="eyebrow"></div>
+          <h1 class="lp-title" data-bind="title"></h1>
+          <p class="lp-lead" data-bind="lead"></p>
+
+          <div class="lp-actions">
+            <a class="lp-btn lp-primary" data-bind="primary-cta"></a>
+            <a class="lp-btn lp-secondary" data-bind="secondary-cta"></a>
+          </div>
+
+          <div class="lp-chips" data-list="chips"></div>
+
+          <div class="pf-hero-proof" aria-label="Características do atendimento">
+            <span>Atendimento online e ao vivo</span>
+            <span>Aplicado ao seu problema</span>
+            <span>Do fundamento à implementação</span>
+          </div>
+        </div>
+
+        <figure class="lp-visual">
+          <img data-bind="hero-image" width="720" height="520" loading="eager">
+          <figcaption data-bind="hero-caption"></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="pf-proof-bar" aria-label="Áreas de experiência">
+      <div class="lp-wrap pf-proof-grid">
+        <div class="pf-proof-intro">Programação conectada à prática financeira</div>
+        <div class="pf-proof-item">
+          <strong>Dados e automação</strong>
+          <span>APIs, pipelines e relatórios</span>
+        </div>
+        <div class="pf-proof-item">
+          <strong>Risco e portfólios</strong>
+          <span>Métricas, validação e análise</span>
+        </div>
+        <div class="pf-proof-item">
+          <strong>Pesquisa quantitativa</strong>
+          <span>Método, código e documentação</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pf-section" id="formatos">
+      <div class="lp-wrap">
+        <div class="pf-heading">
+          <div class="lp-eyebrow">Dois caminhos possíveis</div>
+          <h2>Aprender construindo ou estruturar uma análise que já existe.</h2>
+          <p>O atendimento não parte de um pacote rígido. Primeiro identificamos se sua necessidade é predominantemente educacional ou técnica.</p>
+        </div>
+
+        <div class="pf-paths">
+          <article class="pf-path">
+            <span class="pf-path-number">01</span>
+            <h3>Quero aprender com um projeto prático</h3>
+            <p>Para quem deseja desenvolver Python e finanças ao mesmo tempo, trabalhando fundamentos, bibliotecas e raciocínio a partir de uma aplicação concreta.</p>
+            <a href="#contato">Conversar sobre uma aula aplicada</a>
+          </article>
+
+          <article class="pf-path">
+            <span class="pf-path-number">02</span>
+            <h3>Preciso estruturar ou revisar uma análise</h3>
+            <p>Para quem já possui dados, código, planilha ou uma necessidade profissional e quer organizar a solução com orientação técnica.</p>
+            <a href="#contato">Apresentar meu projeto</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pf-section pf-problems">
+      <div class="lp-wrap">
+        <div class="pf-heading">
+          <div class="lp-eyebrow">Problemas que podemos destravar</div>
+          <h2>Quando a análise existe, mas o processo ainda não está sob controle.</h2>
+          <p>A proposta é reduzir improvisação, retrabalho e dependência de etapas manuais — sem transformar o projeto em uma caixa-preta.</p>
+        </div>
+
+        <div class="pf-problem-grid">
+          <article class="pf-problem">
+            <strong>Planilhas difíceis de manter</strong>
+            <span>Muitas abas, fórmulas frágeis e atualizações repetitivas.</span>
+          </article>
+          <article class="pf-problem">
+            <strong>Dados desorganizados</strong>
+            <span>Datas desalinhadas, formatos inconsistentes e tratamento manual.</span>
+          </article>
+          <article class="pf-problem">
+            <strong>Código que funciona, mas não explica</strong>
+            <span>Resultados sem documentação, validação ou sequência clara.</span>
+          </article>
+          <article class="pf-problem">
+            <strong>Conceito financeiro sem implementação</strong>
+            <span>Dificuldade para transformar uma ideia em cálculo, teste e visualização.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section">
+      <div class="lp-wrap">
+        <div class="lp-heading">
+          <div class="lp-eyebrow" data-bind="audience-eyebrow"></div>
+          <h2 data-bind="audience-title"></h2>
+          <p data-bind="audience-lead"></p>
+        </div>
+        <div class="lp-grid" data-list="audience"></div>
+      </div>
+    </section>
+
+    <section class="lp-section alt" id="exemplos">
+      <div class="lp-wrap">
+        <div class="lp-heading">
+          <div class="lp-eyebrow" data-bind="benefits-eyebrow"></div>
+          <h2 data-bind="benefits-title"></h2>
+          <p data-bind="benefits-lead"></p>
+        </div>
+        <div class="lp-grid" data-list="benefits"></div>
+      </div>
+    </section>
+
+    <section class="pf-section pf-deliverables">
+      <div class="lp-wrap pf-deliverables-grid">
+        <div class="pf-code-window" aria-label="Exemplo de código documentado">
+          <div class="pf-code-top"><i></i><i></i><i></i></div>
+          <div class="pf-code-body">
+            <div><span class="blue">import</span> pandas <span class="blue">as</span> pd</div>
+            <div><span class="muted"># organizar e validar os dados</span></div>
+            <div>returns = prices.pct_change()</div>
+            <div>volatility = returns.std()</div>
+            <div>drawdown = equity / equity.cummax() - 1</div>
+            <br>
+            <div><span class="gold">report</span> = build_report(</div>
+            <div>&nbsp;&nbsp;returns, volatility, drawdown</div>
+            <div>)</div>
+            <br>
+            <div><span class="muted"># resultado claro, verificável e reutilizável</span></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="lp-eyebrow">O que fica ao final</div>
+          <div class="pf-heading" style="margin-bottom:0">
+            <h2>Mais do que fazer o código funcionar.</h2>
+            <p>O objetivo é construir uma análise que você consiga compreender, verificar, apresentar e continuar desenvolvendo.</p>
+          </div>
+
+          <div class="pf-check-list">
+            <div class="pf-check">
+              <div><strong>Código organizado e comentado</strong><span>Uma estrutura mais fácil de revisar e manter.</span></div>
+            </div>
+            <div class="pf-check">
+              <div><strong>Sequência reproduzível de análise</strong><span>Do carregamento dos dados ao resultado final.</span></div>
+            </div>
+            <div class="pf-check">
+              <div><strong>Premissas e decisões documentadas</strong><span>Clareza sobre cálculos, escolhas e limitações.</span></div>
+            </div>
+            <div class="pf-check">
+              <div><strong>Autonomia para continuar</strong><span>Entendimento suficiente para adaptar e evoluir o projeto.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section alt" id="como-funciona">
+      <div class="lp-wrap">
+        <div class="lp-heading">
+          <div class="lp-eyebrow" data-bind="steps-eyebrow"></div>
+          <h2 data-bind="steps-title"></h2>
+          <p data-bind="steps-lead"></p>
+        </div>
+        <div class="lp-grid lp-steps" data-list="steps"></div>
+      </div>
+    </section>
+
+    <section class="pf-section pf-about" id="sobre">
+      <div class="lp-wrap">
+        <div class="pf-about-card">
+          <div class="pf-about-side">
+            <div class="pf-about-monogram">RC</div>
+            <h3>Rodrigo de Carvalho</h3>
+            <p>Finanças, risco, programação e pesquisa quantitativa aplicados a problemas reais.</p>
+            <div class="pf-badges">
+              <span class="pf-badge">CGA — ANBIMA</span>
+              <span class="pf-badge">20+ anos de experiência</span>
+              <span class="pf-badge">Mercado financeiro</span>
+            </div>
+          </div>
+
+          <div class="pf-about-content">
+            <div class="lp-eyebrow">Quem orienta</div>
+            <h2>Experiência financeira conectada à implementação técnica.</h2>
+            <p>Profissional com mais de 20 anos de experiência no mercado financeiro, com atuação em gestão de risco, compliance, operações, sistemas de negociação, análise quantitativa e automação de processos.</p>
+            <p>A orientação combina entendimento do problema financeiro, organização da análise e desenvolvimento em Python — sem promessas de atalhos ou recomendações de investimento.</p>
+
+            <div class="pf-expertise">
+              <span>Python e dados financeiros</span>
+              <span>Risco e portfólios</span>
+              <span>Trading systems</span>
+              <span>Pesquisa quantitativa</span>
+              <span>Automação de processos</span>
+              <span>Documentação e validação</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section">
+      <div class="lp-wrap">
+        <div class="lp-heading">
+          <div class="lp-eyebrow" data-bind="faq-eyebrow"></div>
+          <h2 data-bind="faq-title"></h2>
+          <p data-bind="faq-lead"></p>
+        </div>
+        <div class="lp-faq" data-list="faq"></div>
+      </div>
+    </section>
+
+    <section class="pf-contact-section" id="contato">
+      <div class="lp-wrap pf-contact-grid">
+        <div class="pf-contact-copy">
+          <div class="lp-eyebrow">Próximo passo</div>
+          <h2 data-bind="final-title"></h2>
+          <p data-bind="final-text"></p>
+
+          <div class="pf-contact-notes">
+            <span>Contato inicial sem compromisso</span>
+            <span>Informe seu nível, objetivo e ferramenta</span>
+            <span>Avaliação do formato mais adequado</span>
+          </div>
+        </div>
+
+        <div class="pf-form-card">
+          <iframe
+            data-tally-embed
+            loading="lazy"
+            width="100%"
+            height="500"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Formulário para explicar um projeto em Python para Finanças">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lp-footer">
+    <div class="lp-wrap lp-footer-row">
+      <span data-bind="footer"></span>
+      <a href="/privacidade/">Privacidade</a>
+    </div>
+  </footer>
+
+  <a class="pf-mobile-cta" href="#contato">Explicar meu projeto</a>
+
+  <script src="/assets/lp-common.js"></script>
+  <script src="config.js"></script>
+  <script src="/assets/lp-runtime.js" defer></script>
+  <script src="page.js" defer></script>
+</body>
+</html>
