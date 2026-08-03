@@ -1,6 +1,6 @@
 window.LP_COMMON = {
   tallyUrl: 'https://tally.so/r/XxdPVg',
-  brand: {name: 'Dados Aplicados', subtitle: 'Rodrigo de Carvalho'},
+  brand: {name: 'Dados Aplicados', subtitle: 'Rodrigo Lima'},
   theme: {
     background: '#f7faff',
     surface: '#ffffff',
