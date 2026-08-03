@@ -31,5 +31,5 @@ window.LP_CONFIG = {
     {question: 'Há acompanhamento de exercícios?', answer: 'Sim. A prática é orientada, com análise dos erros e das estratégias utilizadas.'}
   ]},
   finalCta: {type: 'tally', title: 'Estudar mais nem sempre significa estudar melhor.', text: 'Entre em contato, conte qual vestibular pretende fazer, seu prazo e suas dificuldades para entendermos como posso ajudar.', label: 'Entrar em contato', origin: 'matematica-vestibular-final'},
-  footer: '© 2026 Dados Aplicados — Rodrigo de Carvalho.'
+  footer: '© 2026 Dados Aplicados — Rodrigo Lima.'
 };
