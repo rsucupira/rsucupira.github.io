@@ -30,13 +30,13 @@ window.LP_CONFIG = {
   primaryCta: {
     type: 'link',
     label: 'Quero conversar sobre meu projeto',
-    url: '#contato',
+    url: '/python-financas/#contato',
     origin: 'python-financas-hero'
   },
   secondaryCta: {
     type: 'link',
     label: 'Ver exemplos de aplicações',
-    url: '#exemplos',
+    url: '/python-financas/#exemplos',
     origin: 'python-financas-exemplos'
   },
   audience: {
@@ -144,7 +144,7 @@ window.LP_CONFIG = {
     title: 'Conte o que você precisa desenvolver.',
     text: 'Explique brevemente seu objetivo, seu nível atual e as ferramentas que já utiliza. Com essas informações, consigo avaliar se e como posso ajudar.',
     label: 'Explicar meu projeto',
-    url: '#contato',
+    url: '/python-financas/#contato',
     origin: 'python-financas-final'
   },
   footer: '© 2026 Dados Aplicados — aulas e consultoria ao vivo em Python para Finanças. Não constitui recomendação de investimento.'
