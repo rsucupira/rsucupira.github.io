@@ -9,6 +9,46 @@
   const campaignKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
   const qs = selector => document.querySelector(selector);
 
+  const normalizeIdentity = value => String(value || '')
+    .replace(/Rodrigo Sucupira Andrade de Carvalho Lima/g, 'Rodrigo de Carvalho')
+    .replace(/Rodrigo Sucupira/g, 'Rodrigo de Carvalho')
+    .replace(/Rodrigo Carvalho/g, 'Rodrigo de Carvalho');
+
+  function applyPublicIdentity() {
+    document.title = normalizeIdentity(document.title);
+
+    document.querySelectorAll('meta[content]').forEach(meta => {
+      meta.setAttribute('content', normalizeIdentity(meta.getAttribute('content')));
+    });
+
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    const textNodes = [];
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+    textNodes.forEach(node => {
+      const updated = normalizeIdentity(node.nodeValue);
+      if (updated !== node.nodeValue) node.nodeValue = updated;
+    });
+
+    document.querySelectorAll('[title],[aria-label],[alt]').forEach(element => {
+      ['title', 'aria-label', 'alt'].forEach(attribute => {
+        if (element.hasAttribute(attribute)) {
+          element.setAttribute(attribute, normalizeIdentity(element.getAttribute(attribute)));
+        }
+      });
+    });
+
+    document.querySelectorAll('a[href]').forEach(link => {
+      try {
+        const url = new URL(link.href, window.location.href);
+        const isRodrigoGithub = url.hostname.toLowerCase() === 'github.com'
+          && /^\/rsucupira(?:\/|$)/i.test(url.pathname);
+        if (isRodrigoGithub) link.remove();
+      } catch (_) {
+        // Ignora URLs inválidas ou manipuladas por scripts externos.
+      }
+    });
+  }
+
   function setText(selector, value) {
     const element = qs(selector);
     if (element && value !== undefined) element.textContent = value;
@@ -175,4 +215,6 @@
       });
     });
   });
+
+  applyPublicIdentity();
 })();
