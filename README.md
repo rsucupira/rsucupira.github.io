@@ -1,52 +1,72 @@
-# Dados Aplicados — Rodrigo Sucupira
+# Uebey
 
-Landing page estática para GitHub Pages, criada para posicionar o serviço de orientação individual em estatística, Excel e Python para projetos acadêmicos e profissionais.
+**A place for ideas on the web.**  
+**One domain. Infinite ideas.**
 
-## Estrutura
+Uebey is an independent digital studio and growing web ecosystem for launching focused landing pages, lean websites, interactive tools and experiments.
 
-- `index.html` — conteúdo e estrutura da página
-- `styles.css` — identidade visual, responsividade e animações
-- `script.js` — tema claro/escuro, menu móvel, animações e cópia de mensagem
-- `assets/` — logo, favicon e imagem de compartilhamento
+## Positioning
 
-## Publicação no GitHub Pages
+Uebey does not compete as a low-cost DIY website builder. The first business model is service-led: understand the objective, choose the simplest useful digital format, design it, build it and publish it.
 
-Este repositório usa o formato de site de usuário (`rsucupira.github.io`). Depois que os arquivos estiverem na branch principal, o endereço público será:
+Repeated needs can later become templates, automation, products or platform features.
 
-`https://rsucupira.github.io`
+## Commercial ladder
 
-Caso a página não apareça automaticamente, abra **Settings → Pages** e selecione:
+- **Start — R$99**: briefing, visual direction, recommended structure and first page concept. It is not a complete website.
+- **Launch — from R$490**: focused landing page with design, implementation, CTA/form and publication.
+- **Site — from R$1,200**: lean multi-section or multi-page web presence.
+- **Tool — from R$900**: calculators, simulators, lightweight dashboards, forms and interactive flows.
+- **Care — from R$99/month**: optional small updates, maintenance and technical continuity.
 
-- Source: **Deploy from a branch**
-- Branch: **main**
-- Folder: **/(root)**
+Prices are initial commercial references and may evolve with scope and market validation.
 
-## Itens a configurar antes da divulgação
+## Current architecture
 
-1. Substituir o botão provisório do GitHub pelo canal principal de contato.
-2. Informar WhatsApp e/ou e-mail profissional.
-3. Confirmar preços e condições da oferta de lançamento.
-4. Substituir a foto do GitHub por uma foto profissional, se disponível.
-5. Adicionar formulário externo, caso desejado.
-6. Revisar política de privacidade e termos de atendimento.
+The root `index.html` is the Uebey brand and commercial hub. Existing project folders remain independent and continue to work as focused landing pages and portfolio examples.
 
-## Configuração rápida do WhatsApp
+Important shared files:
 
-No `index.html`, substitua o link provisório do GitHub por um link no formato:
+- `index.html` — Uebey home
+- `assets/uebey.css` — Uebey visual system
+- `assets/uebey-mark.svg` — Uebey mark / favicon
+- `assets/lp-common.js` — shared LP configuration
+- `assets/lp.css` — shared LP styles
+- `assets/lp-runtime.js` — LP rendering, tracking, Tally and UTMs
+- `modelo-lp/` — base for new landing pages
+- `scripts/create-lp.mjs` — LP generator
+- `scripts/validate-lps.mjs` — LP validation
 
-`https://wa.me/55DDDNUMERO?text=MENSAGEM`
+## Existing ideas / portfolio
 
-Use apenas números, incluindo país e DDD.
+Examples already hosted in the repository include:
 
-## Direção visual
+- Matemática Leve
+- Python para Finanças
+- Dashboards
+- Inteligência Artificial
+- Bioestatística
+- Cálculo
+- Física para vestibular
+- Systematic Investments
 
-- Fundo azul-marinho e seções claras/alternáveis
-- Ciano e verde como cores de ação
-- Tipografia moderna e alta legibilidade
-- Animações discretas
-- Layout responsivo para celular, tablet e desktop
-- SEO básico e metadados para compartilhamento
+The strategic rule remains: each individual LP should have one audience, one main problem, one promise and one primary action. Uebey's root page is the umbrella brand; the individual pages stay focused.
 
-## Limites da oferta
+## Lead capture
 
-A página explicita que os serviços são educacionais e metodológicos, não incluem realização de provas ou trabalhos em nome do cliente e não constituem consultoria de investimentos.
+The current Uebey CTAs use the existing Tally infrastructure and identify origin and service through query parameters. A dedicated Uebey intake form can replace the shared form later without changing the visual architecture.
+
+## Domain
+
+The repository is currently published through GitHub Pages. The custom domain `uebey.com` should only be activated after Cloudflare DNS and GitHub Pages custom-domain settings are aligned. Until then, do not add a `CNAME` file blindly, because it can redirect the current GitHub Pages site before DNS is ready.
+
+## Brand direction
+
+- ultraminimal
+- white / near-white canvas
+- black typography
+- electric indigo accent
+- portal / nested-U visual motif
+- large editorial typography
+- restrained motion and decoration
+- product-like rather than agency-like presentation
