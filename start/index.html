@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Comece um projeto com a Uebey. Escolha o formato mais adequado para sua ideia: Start, Launch, Site, Tool ou Care.">
+  <meta name="description" content="Comece um projeto com a Uebey. Escolha o formato, responda um briefing curto e organize o próximo passo.">
   <meta name="theme-color" content="#fbfbfd">
   <meta property="og:title" content="Start a project — Uebey">
   <meta property="og:description" content="Choose the smallest thing that can make an impact.">
@@ -25,62 +25,161 @@
         <h1>What should exist on the web next?</h1>
       </div>
       <div class="intro-copy">
-        <p>Você não precisa saber qual tecnologia usar. Escolha o estágio que mais se aproxima da sua necessidade e a Uebey organiza o próximo passo. <strong>Começamos pelo menor formato capaz de fazer a ideia funcionar.</strong></p>
+        <p>Você não precisa saber qual tecnologia usar. A Uebey organiza primeiro <strong>o que precisa existir, para quem e com qual objetivo.</strong> Depois escolhemos a menor solução capaz de funcionar bem.</p>
       </div>
     </section>
 
+    <div class="container progress" aria-label="Etapas do briefing">
+      <button class="progress-step active" data-go-step="1"><span>01</span><b>Choose</b><small>formato</small></button>
+      <i></i>
+      <button class="progress-step" data-go-step="2"><span>02</span><b>Brief</b><small>contexto</small></button>
+      <i></i>
+      <button class="progress-step" data-go-step="3"><span>03</span><b>Ready</b><small>próximo passo</small></button>
+    </div>
+
     <section class="builder">
-      <div class="container builder-grid">
-        <div class="question">
-          <h2>Onde sua ideia está agora?</h2>
-          <p>Escolha uma opção. Você poderá explicar os detalhes no próximo passo.</p>
+      <div class="container">
+        <section class="flow-step active" data-step="1">
+          <div class="builder-grid">
+            <div class="question">
+              <p class="step-kicker">Step 01 · Choose</p>
+              <h2>Onde sua ideia está agora?</h2>
+              <p>Escolha o ponto de partida mais próximo. Isso define o escopo inicial, não limita o que o projeto pode se tornar depois.</p>
 
-          <div class="options">
-            <button class="option" type="button" data-plan="start">
-              <span class="option-num">01</span>
-              <div><h3>Tenho uma ideia, mas ainda preciso dar forma a ela.</h3><p>Direção visual, estrutura e primeiro conceito antes de investir em algo maior.</p></div>
-              <div class="option-price">Start<strong>R$99</strong></div>
-            </button>
+              <div class="options">
+                <button class="option" type="button" data-plan="start">
+                  <span class="option-num">01</span>
+                  <div><h3>Tenho uma ideia, mas ainda preciso dar forma a ela.</h3><p>Direção visual, estrutura e primeiro conceito antes de investir em algo maior.</p></div>
+                  <div class="option-price">Start<strong>R$99</strong></div>
+                </button>
+                <button class="option" type="button" data-plan="launch">
+                  <span class="option-num">02</span>
+                  <div><h3>Preciso colocar uma oferta ou projeto no ar.</h3><p>Landing page focada em apresentar, captar, vender, divulgar ou validar.</p></div>
+                  <div class="option-price">Launch<strong>from R$490</strong></div>
+                </button>
+                <button class="option" type="button" data-plan="site">
+                  <span class="option-num">03</span>
+                  <div><h3>Preciso de uma presença digital mais completa.</h3><p>Site para negócio, profissional, produto ou projeto com mais conteúdo.</p></div>
+                  <div class="option-price">Site<strong>from R$1.200</strong></div>
+                </button>
+                <button class="option" type="button" data-plan="tool">
+                  <span class="option-num">04</span>
+                  <div><h3>Minha ideia precisa fazer alguma coisa.</h3><p>Calculadora, simulador, formulário, catálogo, dashboard ou outra interação.</p></div>
+                  <div class="option-price">Tool<strong>from R$900</strong></div>
+                </button>
+                <button class="option" type="button" data-plan="care">
+                  <span class="option-num">05</span>
+                  <div><h3>Já tenho algo no ar e quero manter ou evoluir.</h3><p>Pequenos ajustes, atualizações e continuidade técnica.</p></div>
+                  <div class="option-price">Care<strong>from R$99/mo</strong></div>
+                </button>
+              </div>
+            </div>
 
-            <button class="option" type="button" data-plan="launch">
-              <span class="option-num">02</span>
-              <div><h3>Preciso colocar uma oferta ou projeto no ar.</h3><p>Uma landing page focada em apresentar, captar, vender, divulgar ou validar.</p></div>
-              <div class="option-price">Launch<strong>from R$490</strong></div>
-            </button>
-
-            <button class="option" type="button" data-plan="site">
-              <span class="option-num">03</span>
-              <div><h3>Preciso de uma presença digital mais completa.</h3><p>Um site para negócio, profissional, produto ou projeto com mais conteúdo.</p></div>
-              <div class="option-price">Site<strong>from R$1.200</strong></div>
-            </button>
-
-            <button class="option" type="button" data-plan="tool">
-              <span class="option-num">04</span>
-              <div><h3>Minha ideia precisa fazer alguma coisa.</h3><p>Calculadora, simulador, formulário, catálogo, dashboard ou outra interação.</p></div>
-              <div class="option-price">Tool<strong>from R$900</strong></div>
-            </button>
-
-            <button class="option" type="button" data-plan="care">
-              <span class="option-num">05</span>
-              <div><h3>Já tenho algo no ar e quero manter ou evoluir.</h3><p>Pequenos ajustes, atualizações e continuidade técnica.</p></div>
-              <div class="option-price">Care<strong>from R$99/mo</strong></div>
-            </button>
+            <aside class="summary dark-summary">
+              <p class="eyebrow">Your path</p>
+              <h2 data-summary-title>Choose a starting point.</h2>
+              <p class="summary-desc" data-summary-desc>Selecione uma opção para ver o caminho recomendado.</p>
+              <ul class="summary-list">
+                <li><span>Investment</span><strong data-summary-investment>—</strong></li>
+                <li><span>Format</span><strong data-summary-scope>—</strong></li>
+                <li><span>Next step</span><strong>short project brief</strong></li>
+              </ul>
+              <button class="continue" type="button" data-continue disabled><span>Choose an option</span><span>→</span></button>
+              <small class="micro">Você ainda não está contratando nada. Primeiro vamos organizar o projeto.</small>
+              <div class="help"><button type="button" data-unsure>Não sei qual escolher →</button></div>
+            </aside>
           </div>
-        </div>
+        </section>
 
-        <aside class="summary">
-          <p class="eyebrow">Your path</p>
-          <h2 data-summary-title>Choose a starting point.</h2>
-          <p class="summary-desc" data-summary-desc>Selecione uma opção ao lado para ver o caminho recomendado.</p>
-          <ul class="summary-list">
-            <li><span>Investment</span><strong data-summary-investment>—</strong></li>
-            <li><span>Format</span><strong data-summary-scope>—</strong></li>
-            <li><span>Next step</span><strong>short project brief</strong></li>
-          </ul>
-          <button class="continue" type="button" data-continue disabled><span>Choose an option</span><span>→</span></button>
-          <small class="micro">O próximo passo abre o formulário da Uebey. Enviar o briefing não cria obrigação de contratação.</small>
-          <div class="help"><a href="https://tally.so/r/XxdPVg?lp=uebey&servico=web-design&origem=uebey-start-unsure">Não sei qual escolher →</a></div>
-        </aside>
+        <section class="flow-step" data-step="2">
+          <div class="brief-layout">
+            <div class="brief-head">
+              <p class="step-kicker">Step 02 · Brief</p>
+              <h2>Five answers are enough to start.</h2>
+              <p>Sem formulário interminável. O objetivo é produzir informação suficiente para decidir escopo, direção e próximo passo.</p>
+            </div>
+
+            <form class="brief-form" data-brief-form>
+              <div class="field full">
+                <label for="idea">01 · Explique a ideia em uma frase.</label>
+                <textarea id="idea" name="idea" required maxlength="420" placeholder="Ex.: Sou nutricionista e quero uma página para apresentar meu atendimento e receber pedidos de consulta."></textarea>
+                <small>O que é, para quem é e o que você quer colocar na web.</small>
+              </div>
+
+              <div class="field">
+                <label for="goal">02 · Qual é a principal ação esperada?</label>
+                <select id="goal" name="goal" required>
+                  <option value="">Escolha uma opção</option>
+                  <option>Receber contatos ou leads</option>
+                  <option>Apresentar um serviço ou negócio</option>
+                  <option>Vender ou divulgar uma oferta</option>
+                  <option>Validar uma ideia</option>
+                  <option>Calcular, simular ou automatizar algo</option>
+                  <option>Atualizar ou melhorar algo existente</option>
+                  <option>Outro objetivo</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="audience">03 · Quem precisa usar ou ver isso?</label>
+                <input id="audience" name="audience" required maxlength="180" placeholder="Ex.: pequenos empresários, alunos do ENEM...">
+              </div>
+
+              <div class="field">
+                <label for="content">04 · Em que estado está o conteúdo?</label>
+                <select id="content" name="content" required>
+                  <option value="">Escolha uma opção</option>
+                  <option>Já tenho textos e imagens prontos</option>
+                  <option>Tenho parte do conteúdo</option>
+                  <option>Tenho referências, mas preciso estruturar</option>
+                  <option>Preciso começar praticamente do zero</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="deadline">05 · Qual é o prazo desejado?</label>
+                <select id="deadline" name="deadline" required>
+                  <option value="">Escolha uma opção</option>
+                  <option>Até 7 dias</option>
+                  <option>Entre 1 e 2 semanas</option>
+                  <option>Entre 2 e 4 semanas</option>
+                  <option>Sem prazo rígido</option>
+                </select>
+              </div>
+
+              <div class="field full optional-field">
+                <label for="reference" data-reference-label>Link ou referência <span>optional</span></label>
+                <input id="reference" name="reference" maxlength="320" placeholder="Site, Instagram, referência visual ou URL atual">
+              </div>
+
+              <div class="brief-actions full">
+                <button class="secondary-action" type="button" data-back-plan>← Change format</button>
+                <button class="continue form-next" type="submit"><span>Build my project brief</span><span>→</span></button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="flow-step" data-step="3">
+          <div class="ready-layout">
+            <div class="ready-copy">
+              <p class="step-kicker">Step 03 · Ready</p>
+              <h2>Your idea now has a shape.</h2>
+              <p>Este resumo organiza o primeiro contato e evita começar uma conversa do zero. Você pode copiá-lo, revisar e seguir para o formulário de contato.</p>
+              <div class="ready-plan"><span>Recommended path</span><strong data-ready-plan>—</strong><small data-ready-price>—</small></div>
+            </div>
+
+            <div class="brief-card">
+              <div class="brief-card-top"><span>UEBEY / PROJECT BRIEF</span><button type="button" data-edit-brief>Edit</button></div>
+              <pre data-brief-output></pre>
+              <div class="ready-actions">
+                <button class="copy-brief" type="button" data-copy-brief><span>Copy brief</span><span>⌘C</span></button>
+                <button class="continue contact-next" type="button" data-contact><span>Continue to contact</span><span>→</span></button>
+              </div>
+              <small class="contact-note" data-copy-note>Ao continuar, tentaremos copiar este briefing para você levar ao formulário.</small>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -89,9 +188,9 @@
         <div><p class="eyebrow">Why this works</p><h2>Less friction before more complexity.</h2></div>
         <div class="why-copy">
           <article><span>01</span><h3>Escopo antes do código</h3><p>Primeiro definimos o trabalho que a experiência precisa fazer. Depois escolhemos a tecnologia.</p></article>
-          <article><span>02</span><h3>Entrada de baixo risco</h3><p>O Start de R$99 existe para dar forma a ideias ainda imaturas sem prometer um projeto completo.</p></article>
+          <article><span>02</span><h3>Entrada de baixo risco</h3><p>O Start de R$99 dá forma a ideias ainda imaturas sem prometer um projeto completo.</p></article>
           <article><span>03</span><h3>Projetos podem crescer</h3><p>Uma landing page pode virar site, ferramenta ou campanha sem precisar começar grande.</p></article>
-          <article><span>04</span><h3>Sem dependência desnecessária</h3><p>A estrutura pode permanecer simples, migrar para domínio próprio e evoluir conforme a necessidade real.</p></article>
+          <article><span>04</span><h3>Briefing reutilizável</h3><p>O resumo final pode ser copiado, revisado e usado como base para proposta, produção e acompanhamento.</p></article>
         </div>
       </div>
     </section>
