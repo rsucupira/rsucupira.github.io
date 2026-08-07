@@ -23,12 +23,12 @@ Prices are initial commercial references and may evolve with scope and market va
 
 ## Current architecture
 
-The root `index.html` is the Uebey brand and commercial hub. Existing project folders remain independent and continue to work as focused landing pages and portfolio examples.
+The root `index.html` is the Uebey brand, commercial hub and portfolio. Existing project folders remain independent and continue to work as focused landing pages and product experiments.
 
 Important shared files:
 
-- `index.html` — Uebey home
-- `assets/uebey.css` — Uebey visual system
+- `index.html` — Uebey home + commercial portfolio
+- `assets/uebey.css` — Uebey visual system and portfolio styles
 - `assets/uebey-mark.svg` — Uebey mark / favicon
 - `assets/lp-common.js` — shared LP configuration
 - `assets/lp.css` — shared LP styles
@@ -37,28 +37,45 @@ Important shared files:
 - `scripts/create-lp.mjs` — LP generator
 - `scripts/validate-lps.mjs` — LP validation
 
-## Existing ideas / portfolio
+## Portfolio structure
 
-Examples already hosted in the repository include:
+The homepage portfolio is intentionally split into two layers.
 
-- Matemática Leve
-- Python para Finanças
-- Dashboards
-- Inteligência Artificial
-- Bioestatística
-- Cálculo
-- Física para vestibular
-- Systematic Investments
+### Client work
 
-The strategic rule remains: each individual LP should have one audience, one main problem, one promise and one primary action. Uebey's root page is the umbrella brand; the individual pages stay focused.
+These are real websites or landing pages built for businesses and professionals:
+
+- **Plasticauto** — automotive website and searchable catalog  
+  https://rsucupira.github.io/lp-plasticauto/
+- **Doçura da Sarah** — food catalog + WhatsApp conversion  
+  https://docura.uebey.com/
+- **Carlos Batista** — audiovisual professional landing page for a magician  
+  https://rsucupira.github.io/lp-magico/
+- **BiotecBrazil** — institutional website for biotechnology education and scientific advisory  
+  https://rsucupira.github.io/lp-biotecbrazil/
+- **Mateus Ciantra** — professional personal website  
+  https://rsucupira.github.io/lp-mateus/
+
+### Uebey Lab
+
+Products and experiments built inside this repository include:
+
+- Matemática Leve — `/resolucao-matematica-vestibular-leve/`
+- Física Leve — `/resolucao-fisica-vestibular-leve/`
+- Química Leve — `/resolucao-quimica-vestibular-leve/`
+- Python para Finanças — `/python-financas/`
+- Dashboards — `/dashboards/`
+- Systematic Investments — `/systematic-investments/`
+
+The strategic rule remains: each individual LP should have one audience, one main problem, one promise and one primary action. Uebey's root page is the umbrella brand; individual pages stay focused.
 
 ## Lead capture
 
-The current Uebey CTAs use the existing Tally infrastructure and identify origin and service through query parameters. A dedicated Uebey intake form can replace the shared form later without changing the visual architecture.
+The current Uebey CTAs use the existing `/start/` flow and identify service through query parameters. Individual LPs can keep their own Tally, WhatsApp or direct-conversion flows independently.
 
 ## Domain
 
-The repository is currently published through GitHub Pages. The custom domain `uebey.com` should only be activated after Cloudflare DNS and GitHub Pages custom-domain settings are aligned. Until then, do not add a `CNAME` file blindly, because it can redirect the current GitHub Pages site before DNS is ready.
+The repository is published through GitHub Pages and is used as the source for the Uebey web presence. Custom domains and subdomains should be aligned with Cloudflare DNS before adding or changing GitHub Pages domain configuration.
 
 ## Brand direction
 
